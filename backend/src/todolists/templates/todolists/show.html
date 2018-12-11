@@ -1,0 +1,11 @@
+{% extends 'todolists/layout.html' %}
+
+{% block content %}
+
+<p> Product: <strong> {{todolist.title}} </strong> </p>
+<p> Store: <strong>{{todolist.body}}</strong> </p>
+<p> <em> Created on: {{todolist.created_at}} </em> </p>
+
+<a href="/todolists">Go Back</a>
+
+{% endblock %}

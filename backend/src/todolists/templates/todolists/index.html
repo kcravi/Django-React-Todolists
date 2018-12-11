@@ -1,0 +1,13 @@
+{% extends 'todolists/layout.html' %}
+
+{% block content %}
+
+<h3> {{title}} </h3>
+<ul>
+  {% for todolist in todolists %}
+  <li>
+    <a href="/todolists/{{todolist.id}}"> {{todolist.title}}</a>
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}
